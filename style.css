@@ -1,0 +1,24 @@
+/* kommentare sind fuer mich da ich noch ein Anfaenger mit CSS bin */
+
+
+* {
+    margin: 0; /* Entfernt den aeusseren Abstand um alle Elemente */
+    padding: 0; /* Entfernt den inneren Abstand in allen Elementen */
+    box-sizing: border-box; /* Verhindert, dass Padding und Border die Gesamtbreite beeinflussen */
+
+}
+
+hmtl {
+    scroll-behavior: smooth; /* Sorgt für sanftes Scrollen, wenn man zu einem Abschnitt springt */
+
+}
+
+body {
+    background: #111222; /* Setzt ein dunklen Hintergrund fuer die gesamte Seite */
+
+}
+
+section {
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+}
