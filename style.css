@@ -5,20 +5,152 @@
     margin: 0; /* Entfernt den aeusseren Abstand um alle Elemente */
     padding: 0; /* Entfernt den inneren Abstand in allen Elementen */
     box-sizing: border-box; /* Verhindert, dass Padding und Border die Gesamtbreite beeinflussen */
-
+    font-family: "Poppins", sans-serif;
 }
 
 hmtl {
     scroll-behavior: smooth; /* Sorgt für sanftes Scrollen, wenn man zu einem Abschnitt springt */
-
 }
 
 body {
     background: #111222; /* Setzt ein dunklen Hintergrund fuer die gesamte Seite */
-
 }
 
 section {
+    position: relative;
+    display: flex;
     justify-content: center; /* Zentriert den Inhalt horizontal */
     align-items: center; /* Zentriert den Inhalt vertikal */
+    padding: 80px 100px;
+    color:  #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ordnet Inhalte vertikal an */
+}
+
+.main-title {
+    font-size: 4em; /* Große Schriftgröße */
+    margin-bottom: 50px; /* Abstand nach unten */
+}
+
+.content .image {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.content .image img {
+    z-index: 111;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.content .image:nth-child(3) {
+    flex: 1 1 600px;
+    height: 800px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    width: 1150px; /* Setzt eine feste Breite für den Inhalt */
+    justify-content: center;
+    align-items: center;
+}
+
+.content .text-box {
+    z-index: 222; /* Stellt sicher, dass die Box über anderen Elementen liegt */
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur (20px); /* Weichzeichnung des Hintergrunds für Glas-Effekt */
+    padding: 40px; /* Innenabstand */
+    max-width: 400px; /* Maximale Breite */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Dünner Rand */
+    border-radius: 10px; /* Runde Ecken */
+    transform: translate(-80px, 50px);
+}
+
+.content .text-box p {
+    font-size: 1.4em;
+}
+
+.content .text-box h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 4em;
+    margin-bottom: 80px;
+}
+
+.info {
+    width: 700px; /* Setzt die Breite */
+    margin-left: 50px; /* Abstand nach links */
+}
+
+.info-class {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.info li {
+    font-size: 1.4em;
+    list-style: none;
+}
+
+.info h4 {
+    font-size: 2em;
+}
+
+.media-info {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.media-info li {
+    list-style: none; /* Entfernt die Standard-Aufzählungspunkte */
+    font-size: 1.6em;
+}
+
+.media-info li a {
+    color: #fff; /* Weiße Schriftfarbe */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+} 
+
+/* Fügt Abstand zwischen Listenelementen hinzu, außer beim letzten */
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+/* Spezielles Padding für bestimmte Listenelemente */
+.media-info li:nth-child(1), .media-info li:nth-child(5) {
+    padding-left: 100px;
+}
+
+.media-info li:nth-child(2), .media-info li:nth-child(4) {
+    padding-left: 50px;
+}
+
+.section-03 {
+    margin-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Versteckt die Scrollbar in WebKit-Browsern (Chrome, Safari) */
+}
+
+html {
+    scrollbar-width: none; /* Versteckt die Scrollbar in Firefox */
+    -ms-overflow-style: none; /* Versteckt die Scrollbar in Internet Explorer/Edge */
 }
