@@ -8,8 +8,10 @@
     font-family: "Poppins", sans-serif;
 }
 
-hmtl {
+html {
     scroll-behavior: smooth; /* Sorgt für sanftes Scrollen, wenn man zu einem Abschnitt springt */
+    scrollbar-width: none; /* Versteckt die Scrollbar in Firefox */
+    -ms-overflow-style: none; /* Versteckt die Scrollbar in Internet Explorer/Edge */
 }
 
 body {
@@ -150,7 +152,3 @@ section {
     display: none; /* Versteckt die Scrollbar in WebKit-Browsern (Chrome, Safari) */
 }
 
-html {
-    scrollbar-width: none; /* Versteckt die Scrollbar in Firefox */
-    -ms-overflow-style: none; /* Versteckt die Scrollbar in Internet Explorer/Edge */
-}
