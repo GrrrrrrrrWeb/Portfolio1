@@ -1,1 +1,3 @@
-Eine Website erstellen mit Informationen von Papaplatte und der Edeltour
+Eine portfolio 
+Dies war nur zum lernen von Basics.
+inspiriert von suzuka.crmnl 
